@@ -29,6 +29,7 @@ function search(ev) {
     refs.gallery.innerHTML = '';
     refs.btnLodeMore.classList.remove('non-hidden');
     
+    page = 1;
     createMarcup();
         
     return query;
@@ -62,12 +63,9 @@ function openBigSizeImg(e) {
     modalImg(e.target.dataset.details);
 };
 
-let nextSibling = 0;
 function scrolling() {
-    nextSibling += 12;
-
-    refs.gallery.children[nextSibling].scrollIntoView({
+    refs.btnLodeMore.scrollIntoView({
     behavior: 'smooth',
-    block: 'center'
+    block: 'end'
     });
 };
