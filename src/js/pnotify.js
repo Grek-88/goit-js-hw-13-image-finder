@@ -6,9 +6,16 @@ defaultModules.set(PNotifyMobile, {});
 
 function pnotify() {
     alert({
-    text: `Nothing found... :( 
+        text: `Nothing found... :(
         Please enter another request.`
     });    
 };
 
-export { pnotify };
+function pnotifyRepeat() {
+    alert({
+        text: `Do not repeat!
+        Please enter another request.`
+    });    
+};
+
+export { pnotify, pnotifyRepeat };
