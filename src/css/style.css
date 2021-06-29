@@ -1,3 +1,18 @@
+.search-form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+input,
+button {
+  width: 300px;
+  font-size: 16px;
+  padding: 6px 0 4px 10px;
+  border: 1px solid #cecece;
+  background: #f6f6f6;
+  border-radius: 8px;
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
